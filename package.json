@@ -1,0 +1,38 @@
+{
+  "name": "@rrios-dev/async-states",
+  "version": "0.0.1",
+  "module": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/src/index.d.ts",
+  "author": {
+    "name": "Roberto Ríos",
+    "email": "roberto@rrios.dev",
+    "url": "https://rrios.dev"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrios-dev/async-states"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --splitting && tsc --emitDeclarationOnly",
+    "test": "bun test",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "bun-types": "latest",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "typescript": "5.0.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
